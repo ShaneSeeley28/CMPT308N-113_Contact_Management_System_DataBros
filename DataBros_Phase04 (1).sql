@@ -109,7 +109,7 @@ create table if not exists Contacts_in_Group (
 	ContactID int,
 	Foreign Key (ContactID) REFERENCES contacts(contactID),
     GroupID int,
-	Foreign Key (GroupID) REFERENCES contact_group(GroupID)
+	Foreign Key (GroupID) REFERENCES c_group(GroupID)
 );
 
 create table if not exists Contact_has_Address (
